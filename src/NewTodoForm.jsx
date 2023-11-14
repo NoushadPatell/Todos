@@ -16,8 +16,9 @@ export function NewTodoForm( {addTodo} ) {
 
 
   return <form onSubmit={handleSubmit} className="new-item-form">
+    <div className="form_head">
   <div className="form-row">
-    <label htmlFor="item">New Item</label>
+    <label htmlFor="item">MY TODOS</label>
     <input
       type="text"
       value={newItem}
@@ -25,7 +26,8 @@ export function NewTodoForm( {addTodo} ) {
       id="item"
     />
   </div>
-  <button className="btn">Add</button>
+  <button className="btn">Save</button>
+  </div>
 </form>
 }
 
